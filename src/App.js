@@ -44,23 +44,23 @@ const foodDictionary = {
 
   "🥚": "egg",
 
-  "🍳": "fried_egg",
+  "🍳": "fried egg",
 
-  "🥘": "shallow_pan_of_food",
+  "🥘": "shallow pan of food",
 
   "🍲": "stew",
 
-  "🥗": "green_salad",
+  "🥗": "green salad",
 
   "🍿": "popcorn",
 
   "🍱": "bento",
 
-  "🍘": "rice_cracker",
+  "🍘": "rice cracker",
 
-  "🍙": "rice_ball",
+  "🍙": "rice ball",
 
-  "🍚": "cooked_rice",
+  "🍚": "cooked rice",
 
   "🍛": "curry",
 
@@ -68,21 +68,21 @@ const foodDictionary = {
 
   "🍝": "spaghetti",
 
-  "🍠": "sweet_potato",
+  "🍠": "sweet potato",
 
   "🍢": "oden",
 
   "🍣": "sushi",
 
-  "🍤": "fried_shrimp",
+  "🍤": "fried shrimp",
 
-  "🍥": "fish_cake",
+  "🍥": "fish cake",
 
   "🍡": "dango",
 
   "🥟": "dumpling",
 
-  "🥠": "fortune_cookie",
+  "🥠": "fortune cookie",
 
   "🍦": "soft ice cream",
 
@@ -104,9 +104,7 @@ const foodDictionary = {
 
   "🍬": "candy",
 
-  "🍭": "lollipop",
-
-  "🍮": "custard"
+  "🍭": "lollipop"
 };
 
 var foodWeKnow = Object.keys(foodDictionary);
@@ -122,7 +120,7 @@ export default function App() {
     //console.log(meaning);
 
     if (meaning === undefined) {
-      meaning = "something which we don't have in our database!";
+      meaning = "We don't have this food in our database!";
     }
 
     setMeaning(meaning); //react call to show o/p
@@ -135,20 +133,31 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>inside out</h1>
-      <input onChange={foodInputhandler}></input>
+      <h1>Foodoji</h1>
+      <input
+        placeholder="Enter food emoji here"
+        onChange={foodInputhandler}
+      ></input>
       {/* //interaction with "onChange"  */}
       <h2>
         <em> {meaning}</em>
       </h2>
       {/* //actual o/p by react using useState  */}
+      <hr />
 
-      <h3> food we know</h3>
+      <h3> Food we have</h3>
+      <h6>click your favourite food</h6>
+
       {foodWeKnow.map(function (emoji) {
         return (
           <span
             onClick={() => emojiClickHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
+            style={{
+              fontSize: "2rem",
+              padding: "1rem",
+
+              cursor: "pointer"
+            }}
             key={emoji}
           >
             {emoji}

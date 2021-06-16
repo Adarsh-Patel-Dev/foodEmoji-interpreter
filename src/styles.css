@@ -5,5 +5,10 @@
 
 input {
   padding: 1rem;
-  width: 80%;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+body {
+  background-color: #fcd34d;
 }
