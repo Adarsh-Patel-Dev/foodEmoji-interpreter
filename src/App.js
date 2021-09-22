@@ -153,9 +153,9 @@ export default function App() {
           <span
             onClick={() => emojiClickHandler(emoji)}
             style={{
+              
               fontSize: "2rem",
               padding: "1rem",
-
               cursor: "pointer"
             }}
             key={emoji}
@@ -164,6 +164,28 @@ export default function App() {
           </span>
         );
       })}
+
+      <footer>
+        <h3>Social Media Presence</h3>
+        <div class="icon">
+          <a
+ href="https://github.com/Adarsh-Patel-Dev"
+            class="fa fa-github"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/adarsh-patel-449a55175"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://twitter.com/AdarshPatelDev?s=08"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://instagram.com/git_sit_code"
+            class="fa fa-instagram"
+          ></a>
+        </div>
+      </footer>
     </div>
   );
 }

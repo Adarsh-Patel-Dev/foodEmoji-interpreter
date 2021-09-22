@@ -12,3 +12,78 @@ input {
 body {
   background-color: #fcd34d;
 }
+
+/*footer*/
+
+/*footer*/
+
+footer {
+  background-color: #b4530985;
+  margin-top: 50px;
+  margin-bottom: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* font-family: "Comfortaa", cursive; */
+  transition: 1s;
+}
+
+footer:hover {
+  background-color: #b45309;
+  transition: 1s;
+}
+
+.fa {
+  padding: 10px;
+  font-size: larger;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2rem;
+  color: white;
+  transition: 1s;
+}
+
+.fa-github:hover {
+  color: #624a85;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+.fa-instagram:hover {
+  color: #fb3958;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+footer h3 {
+  padding: 3rem;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  margin-left: 2rem;
+  padding: auto;
+  text-align: center;
+  font-size: x-large;
+}
